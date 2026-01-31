@@ -1,0 +1,15 @@
+# Klucze i hasła
+.env
+
+# Baza danych bota
+wyslane_ogloszenia.json
+
+# Środowisko wirtualne
+venv/
+
+# Pliki, których nie chcesz na GitHubie
+ram_monitoring.py
+
+# Śmieci Pythona
+__pycache__/
+*.pyc
