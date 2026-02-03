@@ -12,7 +12,7 @@ load_dotenv()
 # 2. Dynamiczna konfiguracja
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 
-# Dynamiczna ścieżka do bazy (zadziała na każdym komputerze)
+# Dynamiczna ścieżka do bazy
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PLIK_BAZA = os.path.join(BASE_DIR, "wyslane_ogloszenia.json")
 
@@ -44,7 +44,7 @@ def powiadom_discord(tytul, link, firma):
         print("BŁĄD: Brak WEBHOOK_URL w pliku .env")
         return
     try:
-        msg = f"**Nowa oferta!** 🚀\n**Stanowisko:** {tytul}\n**Firma:** {firma}\n**Link:** {link}"
+        msg = f"**Nowa oferta!** \n**Stanowisko:** {tytul}\n**Firma:** {firma}\n**Link:** {link}"
         requests.post(WEBHOOK_URL, json={"content": msg})
         time.sleep(1)
     except: pass
