@@ -15,6 +15,10 @@ Project structure
 `requirements.txt` – a list of required Python libraries.
 `wyslane_ogloszenia.json` – a local database of posted offers.
 
+<img width="673" height="506" alt="image" src="https://github.com/user-attachments/assets/ca4e89f3-057a-4cd4-ae97-0b1b7d9493f6" />
+<img width="975" height="569" alt="image" src="https://github.com/user-attachments/assets/3e855bce-5e95-4980-a621-5b1803f8e044" />
+
+
 Installation and Configuration
 
 1. Cloning the Repository
